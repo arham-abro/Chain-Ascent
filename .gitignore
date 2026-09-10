@@ -1,22 +1,46 @@
-# Node dependencies
+# Documentation to ignore
+explain.md
+
+# Dependencies & Package Lock Overhead
 node_modules/
+/.pnp
+.pnp.js
+
+# Next.js & Frontend Build Outputs
+.next/
+out/
+build/
+dist/
+
+# Logs, Databases & Runtime Files
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Next.js build output
-frontend/.next/
-frontend/out/
-
-# Hardhat build output
-blockchain/cache/
-blockchain/artifacts/
-
-# Database / Docker volumes
+logs/
+*.sqlite
+*.sqlite3
+*.db
+data/
 pgdata/
+
+# Environment & Secret Files
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# OS files
+# IDE, OS & Archive Files
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
+*.swp
+*.bak
+*.zip
+*.tar.gz
+*.rar
+*.7z
+coverage/
+.cache/
