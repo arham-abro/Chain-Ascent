@@ -1,0 +1,67 @@
+services:
+  # Next.js Frontend (Exposed for Local Network Access)
+  frontend:
+    build: 
+      context: ./frontend
+    ports:
+      - "0.0.0.0:3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:5000
+      - NEXT_PUBLIC_RPC_URL=http://localhost:8545
+    depends_on:
+      - backend
+      - blockchain
+    networks:
+      - chainascent-net
+
+  # Express.js Backend API
+  backend:
+    build: 
+      context: ./backend
+    ports:
+      - "0.0.0.0:5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@database:5432/chainascent
+      - RPC_URL=http://blockchain:8545
+    depends_on:
+      - database
+      - blockchain
+    networks:
+      - chainascent-net
+
+  # PostgreSQL Database (Internal Docker Network Only - Secured from External Access)
+  database:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=chainascent
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - chainascent-net
+
+  # Local Blockchain Node (Hardhat EVM Sandbox)
+  blockchain:
+    build:
+      context: ./blockchain
+    ports:
+      - "8545:8545"
+    networks:
+      - chainascent-net
+
+  # Cloudflare Tunnel for Mobile & Remote Access
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --url http://frontend:3000
+    depends_on:
+      - frontend
+    networks:
+      - chainascent-net
+
+networks:
+  chainascent-net:
+    driver: bridge
+
+volumes:
+  pgdata:

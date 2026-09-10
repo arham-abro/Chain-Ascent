@@ -1,0 +1,16 @@
+{
+  "name": "chainascent-blockchain",
+  "version": "1.0.0",
+  "description": "Hardhat local network and smart contracts for ChainAscent",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "node": "hardhat node --hostname 0.0.0.0",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.19.0"
+  }
+}
