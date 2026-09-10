@@ -1,15 +1,3 @@
-# Internal documentation & scratch files
-explain.md
-*.log
-.DS_Store
-Thumbs.db
-
-# Database / Docker volumes & environment
-pgdata/
-.env
-.env.local
-.env.*
-
 # Node dependencies
 node_modules/
 npm-debug.log*
@@ -20,6 +8,15 @@ yarn-error.log*
 frontend/.next/
 frontend/out/
 
-# Hardhat build output & cache
+# Hardhat build output
 blockchain/cache/
 blockchain/artifacts/
+
+# Database / Docker volumes
+pgdata/
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
