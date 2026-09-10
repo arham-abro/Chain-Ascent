@@ -1,46 +1,70 @@
 # Documentation to ignore
 explain.md
 
-# Dependencies & Package Lock Overhead
-node_modules/
-/.pnp
-.pnp.js
+# Python Bytecode & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+venv/
+.venv/
+env/
+ENV/
 
-# Next.js & Frontend Build Outputs
+# Node Dependencies & Package Managers
+node_modules/
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js, React & Build Outputs
 .next/
 out/
 build/
 dist/
+*.egg-info/
+
+# Hardhat & Smart Contract Artifacts
+artifacts/
+cache/
+typechain/
+typechain-types/
 
 # Logs, Databases & Runtime Files
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 logs/
 *.sqlite
 *.sqlite3
 *.db
 data/
 pgdata/
+attacks.json
 
 # Environment & Secret Files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
 
-# IDE, OS & Archive Files
+# IDE, OS, Cache & Archive Files
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 *.swp
 *.bak
+*.tmp
 *.zip
 *.tar.gz
 *.rar
 *.7z
 coverage/
 .cache/
+.gemini/

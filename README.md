@@ -1,25 +1,25 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=ef4444&height=200&section=header&text=🚀%20ChainAscent&fontSize=50&fontColor=ffffff&animation=fadeIn&desc=Web3%20Aviator%20Crash%20Game%20Ecosystem&descSize=20&descAlignY=75)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=ef4444&height=200&section=header&text=🚀%20ChainAscent&fontSize=50&fontColor=ffffff&animation=fadeIn&desc=Production%20Web3%20Aviator%20Crash%20Game%20Monorepo&descSize=18&descAlignY=75)
 
 <div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-4.x-000000?style=for-the-badge&logo=express&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Express.js-4.18-339933?style=for-the-badge&logo=express&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.20-363636?style=for-the-badge&logo=solidity&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-LIVE-22c55e?style=for-the-badge)
-![Course](https://img.shields.io/badge/Course-CCP%20Web3-1F3864?style=for-the-badge)
+![Course](https://img.shields.io/badge/Course-Complex%20Computer%20Project-1F3864?style=for-the-badge)
 
 <br/>
 
-> **A 5-tier multi-container Web3 Aviator crash game ecosystem featuring 60+ FPS HTML5 Canvas engine, HMAC-SHA256 provably fair cryptography, and local EVM smart contract node.**  
-> Deployed with Docker Compose — 1-command startup on ports **3000**, **5000**, **5432**, and **8545**.
+> **A containerized 5-tier Web3 Aviator-style crash game ecosystem featuring provably fair cryptographic verification and smart contract payout execution.**  
+> Built with Next.js 14, Express API, PostgreSQL 15, and Solidity on Hardhat EVM.
 
 <br/>
 
 [![View Live Dashboard](https://img.shields.io/badge/🔴%20LIVE%20GAME-View%20Now-ef4444?style=for-the-badge)](http://localhost:3000/)
-[![API Endpoint](https://img.shields.io/badge/API-/api/game/status-1F3864?style=for-the-badge)](http://localhost:5000/api/game/status)
-[![Provably Fair API](https://img.shields.io/badge/API-/provably--fair-1F3864?style=for-the-badge)](http://localhost:5000/api/game/provably-fair)
+[![API Endpoint](https://img.shields.io/badge/API-/api/game-1F3864?style=for-the-badge)](http://localhost:5000/api/game/status)
+[![RPC Endpoint](https://img.shields.io/badge/RPC-Hardhat:8545-61DAFB?style=for-the-badge)](http://localhost:8545)
 
 </div>
 
@@ -27,63 +27,68 @@
 
 ## 📸 Screenshots
 
-### 🖥️ Live Aviator Canvas Console — 60 FPS HTML5 Flight Engine
+### 🎮 Live Aviator Flight Engine — 60 FPS HTML5 Canvas
 ![Dashboard](screenshots/dashboard.png)
 
-### ☁️ Docker Desktop — 5-Tier Container Ecosystem Running
-![AWS](screenshots/aws-console.png)
+### 🔒 Provably Fair Cryptographic Inspector & SHA512 Verification
+![Provably Fair](screenshots/provably-fair.png)
 
-### 🔒 Provably Fair Verification & Dual Betting Panels
-![Security Group](screenshots/security-group.png)
+### ⚡ Dual Independent Betting Control Panels
+![Betting Controls](screenshots/betting-panel.png)
 
-### 📋 Backend Express API Logs (Terminal)
-![Logs](screenshots/attacks-log.png)
+### 📋 Docker Microservices Ecosystem (Console Logs)
+![Logs](screenshots/docker-logs.png)
 
-### 🌐 API Response — Live Multiplier JSON Data
+### 🌐 Backend Express REST API & PostgreSQL Health
 ![API](screenshots/api-response.png)
 
 ---
 
 ## ⚡ What It Does
 
-ChainAscent delivers a real-time, provably fair Web3 crash game experience inspired by Spribe's official Aviator game. Here is what is achieved in real time:
+ChainAscent is a production-grade 5-tier Web3 Aviator crash game monorepo. Players place bets before round launch while an airplane ascends, increasing a multiplier in real-time. Players must cash out before the plane crashes to multiply their stake.
 
-| Metric | Result |
-|--------|--------|
-| 🎮 HTML5 Canvas Flight Engine | 60+ FPS smooth flight curve, glowing particle trails, and flight explosion FX |
-| 🔐 Provably Fair Cryptography | Unalterable HMAC-SHA256 server and client seeds generated before every round |
-| ⚡ Dual Independent Betting | Simultaneous dual bets with auto-cashout triggers & profit calculation |
-| 🎵 Web Audio Sound Synthesizer | Real-time flight frequency modulation and sound synthesis without heavy MP3 assets |
-| 🗄️ Relational Data Persistence | PostgreSQL 15 database storing complete game round multiplier history & bet logs |
-| ⛓️ On-Chain Smart Contract | Solidity `MultiplierGame.sol` with Checks-Effects-Interactions reentrancy protection |
+| Metric / Feature | Result / Details |
+|------------------|------------------|
+| 🎮 Game Mechanics | 60+ FPS HTML5 Canvas flight path rendering with particle explosions |
+| 🔑 Provably Fair Engine | HMAC-SHA512 & SHA256 cryptographic multiplier pre-determination |
+| 💰 Dual Betting Panels | Place 2 independent bets per round with preset amount pills ($1, $2, $5, $10) |
+| 🎵 Audio Synthesizer | Native Web Audio API (`AudioContext`) sound synthesis for flight & crashes |
+| ⛓️ Smart Contract | Solidity 0.8.20 (`MultiplierGame.sol`) with CEI reentrancy protection |
+| 🐳 Deployment | 1-command `docker compose up --build -d` orchestrating 5 containerized tiers |
 
 ---
 
 ## 🏗️ Architecture
 
 ```
-Internet / Local Network (Players & Smartphones)
+                       User Browser (Web3 Frontend)
+                                   │
+                                   ▼
+                    [Next.js 14 Frontend - Port 3000]
+                    ┌───────────────────────────────┐
+                    │ • HTML5 Canvas Flight Engine  │
+                    │ • Web Audio Synthesizer       │
+                    │ • Provably Fair Inspector     │
+                    └───────┬───────────────┬───────┘
+                            │               │
+            REST API (Port 5000)            │ JSON-RPC (Port 8545)
+                            │               │
+                            ▼               ▼
+         [Express Backend - Port 5000]   [Hardhat EVM - Port 8545]
+         ┌───────────────────────────┐   ┌──────────────────────┐
+         │ • Game Orchestrator Loop  │   │ • MultiplierGame.sol │
+         │ • Provably Fair HMAC-SHA  │   │ • CEI Payout Guard   │
+         └─────────────┬─────────────┘   └──────────────────────┘
+                       │
+               SQL Pool (Port 5432)
                        │
                        ▼
-            [AWS / Docker Gateway]
-   ┌───────────────────────────────────────────────┐
-   │  ChainAscent Microservices Ecosystem          │
-   │                                               │
-   │  ├── Next.js 14 Frontend  → Port 3000         │
-   │  │   └── HTML5 Canvas & Dual Betting UI       │
-   │  │                                            │
-   │  ├── Express REST API     → Port 5000         │
-   │  │   └── HMAC-SHA256 Provably Fair Engine     │
-   │  │                                            │
-   │  ├── PostgreSQL 15 DB     → Port 5432         │
-   │  │   └── Relational Game & Round History      │
-   │  │                                            │
-   │  └── Hardhat EVM Node     → Port 8545         │
-   │      └── MultiplierGame.sol Smart Contract    │
-   └───────────────────────────────────────────────┘
-                       │
-                       ▼
-            [Your Browser - Live Game]
+        [PostgreSQL DB - Port 5432]
+        ┌───────────────────────────┐
+        │ • `games` & `bets` Tables │
+        │ • Persistent Volume Data  │
+        └───────────────────────────┘
 ```
 
 ---
@@ -92,90 +97,89 @@ Internet / Local Network (Players & Smartphones)
 
 | Layer | Technology |
 |-------|-----------|
-| ☁️ Infrastructure | Docker, Docker Compose, Cloudflare Tunnel |
-| 🎣 Frontend UI | Next.js 14 (App Router), React 18, HTML5 Canvas, Tailwind CSS |
-| 🐍 Backend API | Node.js, Express.js REST API |
-| 🗄️ Database | PostgreSQL 15, `pg` Connection Pool |
-| ⛓️ Smart Contract | Solidity ^0.8.20, Hardhat EVM Local Node |
-| 📝 Cryptography | HMAC-SHA256 Provably Fair Seed Engine |
+| 🎨 Frontend | Next.js 14 (App Router), React 18, HTML5 Canvas, Tailwind CSS, Web Audio API |
+| 🐍 Backend API | Express.js, Node.js, Crypto (HMAC-SHA512 / SHA256) |
+| ⛓️ Blockchain | Solidity `^0.8.20`, Hardhat EVM, Ethers.js |
+| 🐘 Database | PostgreSQL 15 (Alpine) with connection retry resilience |
+| 🐳 Containerization | Docker & Docker Compose (5-tier microservices network) |
+| 🌐 Tunneling | Cloudflare Tunnels / localtunnel / ngrok remote access |
 
 ---
 
-## 🎣 Subsystems & Components
+## ✈️ Core Subsystems
 
-### 🕹️ HTML5 Canvas Flight Engine (Port 3000)
-Next.js 14 web app rendering smooth 60 FPS flight graphics, dual betting controls, live round multiplier ribbon, and audio synthesizer.
+### 🎨 HTML5 Canvas Flight Engine
+Uses `requestAnimationFrame` for 60+ FPS smooth rendering. Displays sunburst background rays, quadratic curved flight trajectories, dynamic airplane sprites, glowing trails, and explosive crash particle effects. Includes a top Multiplier History Ribbon showing recent outcomes.
 
-### 🔐 HMAC-SHA256 Provably Fair Backend (Port 5000)
-Express REST server calculating deterministic crash multipliers using unalterable server & client seeds before round launch.
+### 🔐 Provably Fair Cryptographic Engine
+Calculates crash multipliers deterministically before round start using HMAC-SHA512 / SHA256. Players can open the built-in inspector modal to independently verify server seeds, client seeds, combined hashes, and exact multipliers.
 
-### 📟 Hardhat EVM Blockchain Node (Port 8545)
-EVM testnet node hosting `MultiplierGame.sol` smart contract for on-chain bet validation and payout execution.
+### 💰 Dual Betting Controls & Audio Synthesizer
+Allows users to configure two autonomous betting panels simultaneously. Features live profit displays, automated cashout options, and custom procedural sound effects generated directly via the browser Web Audio API.
+
+### ⛓️ Solidity Smart Contract (`MultiplierGame.sol`)
+Enforces minimum and maximum bet constraints, manages on-chain state, and executes payouts safely using Checks-Effects-Interactions (CEI) design patterns to prevent reentrancy attacks.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-chainascent/
-├── backend/              # Express API, HMAC Provably Fair Engine, DB Models
-│   ├── server.js
-│   ├── db.js
+ChainAscent/
+├── backend/                  # Express.js REST API server & provably fair engine
+│   ├── index.js              # Game loop, API routes & PostgreSQL pool
+│   ├── package.json
 │   └── Dockerfile
-├── blockchain/           # Hardhat Node, MultiplierGame.sol Smart Contract
-│   ├── contracts/
-│   │   └── MultiplierGame.sol
-│   └── Dockerfile
-├── frontend/             # Next.js 14 App Router, Canvas Engine, Web Audio
+├── frontend/                 # Next.js 14 Spribe-style Aviator Web Application
 │   ├── src/
-│   │   ├── app/
-│   │   └── components/
+│   │   ├── app/              # App router & layout
+│   │   ├── components/       # MultiplierCanvas, BettingPanel, ProvablyFairModal
+│   │   └── utils/            # Web Audio engine & helpers
+│   ├── package.json
 │   └── Dockerfile
-├── screenshots/          # Project screenshots
-├── docker-compose.yml    # 5-tier container orchestration
-├── .gitignore
-└── README.md             # Project documentation
+├── blockchain/               # Hardhat EVM & Solidity Smart Contracts
+│   ├── contracts/            # MultiplierGame.sol smart contract
+│   ├── scripts/              # Deployment & test scripts
+│   ├── hardhat.config.js
+│   └── Dockerfile
+├── docker-compose.yml        # Orchestrates frontend, backend, database, blockchain, & tunnel
+├── .gitignore                # Comprehensive ignore rules
+└── screenshots/              # Application screenshots
 ```
 
 ---
 
 ## 🚀 Setup & Deployment
 
-### 1. Clone the repo
+### 1. Clone the repository
 ```bash
 git clone https://github.com/arham-abro/Chain-Ascent.git
 cd Chain-Ascent
 ```
 
-### 2. Install dependencies (Optional / Local Dev)
-```bash
-npm install
-```
-
-### 3. Start everything with Docker
+### 2. Start the full 5-tier stack with Docker Compose
 ```bash
 docker compose up --build -d
 ```
 
-### 4. Open the game dashboard
-http://localhost:3000
+### 3. Access the application
+- 🎮 **Frontend Game Interface**: [http://localhost:3000](http://localhost:3000)
+- ⚡ **Express REST API**: [http://localhost:5000/api/game/status](http://localhost:5000/api/game/status)
+- ⛓️ **Hardhat Blockchain RPC**: [http://localhost:8545](http://localhost:8545)
 
-> ⚠️ **Note:** Ensure Docker Desktop is running before executing `docker compose up`.
+> 💡 **Global Remote Access**: To access from mobile data or remote networks, run `npx localtunnel --port 3000` or `npx ngrok http 3000`.
 
 ---
 
-## 🔍 Real Provably Fair Log Example Captured
+## 🔍 Provably Fair Algorithm
 
-```json
-{
-  "status": "success",
-  "roundId": 1042,
-  "crashMultiplier": 3.42,
-  "provablyFair": {
-    "serverSeed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "clientSeed": "00000000000000000003b57e6c469b7e7e8b",
-    "combinedHash": "8f4e2b19741a3d902e8876c12b91d24ef0901234a56789b"
-  }
+```javascript
+function generateProvablyFairRound(serverSeed, clientSeed) {
+  const hash = crypto.createHmac('sha256', serverSeed).update(clientSeed).digest('hex');
+  const hexSubstring = hash.substring(0, 8);
+  const intVal = parseInt(hexSubstring, 16);
+  const crashMultiplier = Number((1.01 + (intVal % 1400) / 100).toFixed(2));
+  return { hash, crashMultiplier };
 }
 ```
 
@@ -183,12 +187,13 @@ http://localhost:3000
 
 ## 📡 API Endpoints
 
-| Endpoint | Description |
-|----------|-------------|
-| `GET /api/game/status` | Check live game state & current multiplier |
-| `GET /api/game/provably-fair` | Recent provably fair seeds & crash verification |
-| `POST /api/game/bet` | Place round bet & auto-cashout limits |
-| `GET /health` | Backend & PostgreSQL database connection status |
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/health` | `GET` | Health check for Express API & PostgreSQL |
+| `/api/game/status` | `GET` | Current game state, countdown, multiplier, & history |
+| `/api/game/bet` | `POST` | Place a bet for the upcoming round |
+| `/api/game/cashout` | `POST` | Cash out active bet at current multiplier |
+| `/api/game/provably-fair` | `GET` | Retrieve provably fair seeds & hash verification data |
 
 ---
 
@@ -198,15 +203,15 @@ http://localhost:3000
 |-------|---------|
 | 👤 Student | Arham Abro |
 | 🎫 Roll No. | 72532 |
-| 📚 Course | Cloud Security / CCP |
+| 📚 Course | Complex Computer Project (CCP) / Web3 / Cloud Security |
 | 👨‍🏫 Instructor | Muhammad Ahsan Naeem |
 | 🏛️ Department | Cyber Security — Iqra University |
-| 📅 Date | May 2026 |
+| 📅 Date | September 2026 |
 
 ---
 
 <div align="center">
 
-**Made with 🚀 on Docker · Built for Cloud Security / CCP Course**
+**Made with 🚀 for Web3 Aviator Crash Game Monorepo**
 
 </div>
